@@ -10,6 +10,11 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 ### Added
 
 - Custom icons for issue priorities in the list view. Configure via `gui.priorityIcons` map in config.yml. Plain text works too.
+- `slugify` template function for custom commands. Use in templates like `git switch -c wip/{{ .Summary | slugify }}` to produce URL- and branch-safe slugs. German umlauts (ä→ae, ß→ss) and other accented letters are transliterated to ASCII (#72)
+
+### Changed
+
+- Branch generation with `git.asciiOnly: true` now transliterates German umlauts (ä→ae, ß→ss) and strips other accents (é→e) instead of dropping non-ASCII characters. Issue types like "Lösung" now produce "loesung" instead of "Lsung" (#72)
 
 ## [2.13.0] - 2026-05-05
 
