@@ -7,6 +7,8 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
+## [2.15.0] - 2026-05-21
+
 ### Added
 
 - Pluggable ADF-to-Markdown converter. The roundtrip now goes through an `ADFConverter` interface with two implementations: the builtin converter (default and fallback) and `adf-converter` v0.1.0. Set `converter: adf-converter` in config.yml to enable the placeholder-based converter for lossless preservation of panels, tables, status badges and other complex elements. The active converter flows through the full edit lifecycle, including the create-form description preview (#74)
@@ -410,7 +412,8 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 - Cross-platform: macOS, Linux, Windows
 - Homebrew install via tap
 
-[Unreleased]: https://github.com/textfuel/lazyjira/compare/v2.14.0...HEAD
+[Unreleased]: https://github.com/textfuel/lazyjira/compare/v2.15.0...HEAD
+[2.15.0]: https://github.com/textfuel/lazyjira/compare/v2.14.0...v2.15.0
 [2.14.0]: https://github.com/textfuel/lazyjira/compare/v2.13.0...v2.14.0
 [2.13.0]: https://github.com/textfuel/lazyjira/compare/v2.12.0...v2.13.0
 [2.12.0]: https://github.com/textfuel/lazyjira/compare/v2.11.1...v2.12.0
