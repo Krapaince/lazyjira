@@ -7,6 +7,14 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
+### Added
+
+- Pluggable ADF-to-Markdown converter. The roundtrip now goes through an `ADFConverter` interface with two implementations: the builtin converter (default and fallback) and `adf-converter` v0.1.0. Set `converter: adf-converter` in config.yml to enable the placeholder-based converter for lossless preservation of panels, tables, status badges and other complex elements. The active converter flows through the full edit lifecycle, including the create-form description preview (#74)
+
+### Changed
+
+- CI now runs Dependabot updates, `govulncheck` vulnerability scanning, GitHub dependency review and a `make check-demo` build check. The `golangci-lint` version is pinned via go tool directives (#76)
+
 ## [2.14.0] - 2026-05-15
 
 ### Added
