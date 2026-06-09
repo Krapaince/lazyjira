@@ -185,21 +185,3 @@ func TestIssuesList_ActiveTabTruncated_WhenLabelExceedsBudget(t *testing.T) {
 		t.Errorf("top border width = %d, want %d (label overflowed border)\nline: %q", got, width, line)
 	}
 }
-
-
-// stripANSI removes ANSI escape sequences for plain-text substring checks.
-func stripANSI(s string) string {
-	var b strings.Builder
-	inEsc := false
-	for _, r := range s {
-		switch {
-		case r == '\x1b':
-			inEsc = true
-		case inEsc && r == 'm':
-			inEsc = false
-		case !inEsc:
-			b.WriteRune(r)
-		}
-	}
-	return b.String()
-}
