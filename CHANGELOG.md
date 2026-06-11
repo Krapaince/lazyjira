@@ -7,6 +7,8 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
+## [2.16.1] - 2026-06-11
+
 ### Changed
 
 - Full unit-test suite across the whole repository, raising coverage from about 50% to about 80% (stdlib `testing`, table-driven cases, race detector). New test linters are enforced in `.golangci.yml` (thelper, tparallel, usetesting, testableexamples, paralleltest) (#92)
@@ -432,7 +434,8 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 - Cross-platform: macOS, Linux, Windows
 - Homebrew install via tap
 
-[Unreleased]: https://github.com/textfuel/lazyjira/compare/v2.16.0...HEAD
+[Unreleased]: https://github.com/textfuel/lazyjira/compare/v2.16.1...HEAD
+[2.16.1]: https://github.com/textfuel/lazyjira/compare/v2.16.0...v2.16.1
 [2.16.0]: https://github.com/textfuel/lazyjira/compare/v2.15.0...v2.16.0
 [2.15.0]: https://github.com/textfuel/lazyjira/compare/v2.14.0...v2.15.0
 [2.14.0]: https://github.com/textfuel/lazyjira/compare/v2.13.0...v2.14.0
