@@ -7,6 +7,16 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
+### Added
+
+- Create subtasks under the selected issue, from the task list and the Info panel's Sub tab. The parent is set automatically and the type picker is limited to subtask types. The action appears only where a subtask is valid, so epics and existing subtasks are excluded. The key is configurable like the other issue actions (#94)
+
+### Changed
+
+- The create form now names which required fields are still empty on submit, instead of only counting them, so it is clear what to fill in before the request goes out (#94)
+- Reporter is now pre-filled with the current user when creating an issue or subtask, matching Jira's own create defaults. It can still be changed or cleared (#94)
+- Create errors now split into pre-form and submit stages. A failed fetch of the parent's issue types aborts with a readable message instead of opening an empty form, while submit errors stay inline. Messages carry Jira's own error text instead of an internal request wrapper (#94)
+
 ## [2.16.1] - 2026-06-11
 
 ### Changed
