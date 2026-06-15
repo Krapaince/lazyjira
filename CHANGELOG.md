@@ -7,6 +7,8 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
+## [2.17.0] - 2026-06-15
+
 ### Added
 
 - Create subtasks under the selected issue, from the task list and the Info panel's Sub tab. The parent is set automatically and the type picker is limited to subtask types. The action appears only where a subtask is valid, so epics and existing subtasks are excluded. The key is configurable like the other issue actions (#94)
@@ -444,7 +446,8 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 - Cross-platform: macOS, Linux, Windows
 - Homebrew install via tap
 
-[Unreleased]: https://github.com/textfuel/lazyjira/compare/v2.16.1...HEAD
+[Unreleased]: https://github.com/textfuel/lazyjira/compare/v2.17.0...HEAD
+[2.17.0]: https://github.com/textfuel/lazyjira/compare/v2.16.1...v2.17.0
 [2.16.1]: https://github.com/textfuel/lazyjira/compare/v2.16.0...v2.16.1
 [2.16.0]: https://github.com/textfuel/lazyjira/compare/v2.15.0...v2.16.0
 [2.15.0]: https://github.com/textfuel/lazyjira/compare/v2.14.0...v2.15.0
