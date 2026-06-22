@@ -7,6 +7,12 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased]
 
+## [2.19.0] - 2026-06-22
+
+### Added
+
+- `@Name` in a comment or description now resolves to a real Jira mention on submit when exactly one user of the issue's project matches that name. Other names stay as literal text, code spans and fenced blocks are left untouched, and existing mentions are not rewritten. This is Cloud only, Data Center writes are unchanged. When the project's user cache is still cold the write is deferred one tick to fetch users, falling back to literal text on error (#95)
+
 ## [2.18.0] - 2026-06-19
 
 ### Added
@@ -453,7 +459,8 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 - Cross-platform: macOS, Linux, Windows
 - Homebrew install via tap
 
-[Unreleased]: https://github.com/textfuel/lazyjira/compare/v2.18.0...HEAD
+[Unreleased]: https://github.com/textfuel/lazyjira/compare/v2.19.0...HEAD
+[2.19.0]: https://github.com/textfuel/lazyjira/compare/v2.18.0...v2.19.0
 [2.18.0]: https://github.com/textfuel/lazyjira/compare/v2.17.0...v2.18.0
 [2.17.0]: https://github.com/textfuel/lazyjira/compare/v2.16.1...v2.17.0
 [2.16.1]: https://github.com/textfuel/lazyjira/compare/v2.16.0...v2.16.1
